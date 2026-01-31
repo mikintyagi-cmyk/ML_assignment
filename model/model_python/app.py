@@ -38,7 +38,7 @@ if uploaded_file is not None:
     st.dataframe(df.head(), use_container_width=True)
     
     X, y, target_column = dataprocess(df, target_column=None)
-    
+        
     # --------------------------------------------------
     # (b) Model selection dropdown
     # --------------------------------------------------
@@ -96,7 +96,7 @@ if uploaded_file is not None:
     if model_name != "Select the Model":#printing model 
         #printing confusion matrix.
         st.subheader("Reports and matrix")
-        col1,spacer, col2 = st.columns([1,0.3,2,0.3,3])
+        col1, spacer, col2, spacer, col3 = st.columns([1,0.3,2,0.3,3])
         cm = confusion_matrix(y_test, y_pred)
         with col1:
             fig, ax = plt.subplots()
