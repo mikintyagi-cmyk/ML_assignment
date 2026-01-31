@@ -37,7 +37,7 @@ if uploaded_file is not None:
     st.subheader("🔍 Dataset Preview")
     st.dataframe(df.head(), use_container_width=True)
     
-    X, y, target_column = preprocess_data(df, target_column=None)
+    X, y, target_column = dataprocess(df, target_column=None)
     
     # --------------------------------------------------
     # (b) Model selection dropdown
