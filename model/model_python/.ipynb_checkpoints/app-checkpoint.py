@@ -7,14 +7,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
-#importing python file functions.
 from logistic import logistic_model
 from decision_tree import decision_classifier
 from knn import knn_classifier
 from naiveBayes import nb_classifier
 from random_forest import rf_classifier
 from XGB import xgb_classifier
-from classification import preprocess_data
+from featuretunning import dataprocess
 
 st.set_page_config(page_title="MachineLearning Model Eval App", layout="wide")
 st.title("📈ML Model Evaluation Dashboard")
