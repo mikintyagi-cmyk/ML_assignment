@@ -15,7 +15,7 @@ from sklearn.metrics import (
     f1_score,
     matthews_corrcoef
 )
-from featuretunning import dataprocess
+
 
 def knn_classifier(X,y):
     
