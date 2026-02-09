@@ -18,7 +18,6 @@ from sklearn.metrics import (
 )
 import matplotlib.pyplot as plt
 import seaborn as sns
-from featuretunning import dataprocess
 
 def logistic_model(X,y):
     numerical_cols = X.select_dtypes(include=["int64","float64"]).columns #finding numerical data to handle null value
